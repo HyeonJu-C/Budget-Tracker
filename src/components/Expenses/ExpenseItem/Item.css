@@ -1,0 +1,42 @@
+.item-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 0.5em 1em;
+  margin-bottom: 0.5em;
+  border: 1px solid transparent;
+  border-radius: 1em;
+  box-shadow: 5px 6px 15px -2px rgba(0, 0, 0, 0.8);
+  background-color: rgba(169, 169, 169, 0.295);
+}
+
+.item-description {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 70%;
+  color: snow;
+}
+
+.description-price {
+  text-align: center;
+  padding: 0.5em 1.5em;
+  border: 2px solid snow;
+  border-radius: 0.5em;
+  color: snow;
+  background-color: rebeccapurple;
+  font-weight: 600;
+}
+
+@media screen and (max-width: 576px) {
+  .item-description {
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
+  .description-title {
+    font-size: 1rem;
+    margin-bottom: 0.125em;
+  }
+}
