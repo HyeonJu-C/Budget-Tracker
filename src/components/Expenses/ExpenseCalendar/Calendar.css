@@ -1,12 +1,10 @@
-.date-container {
+.date.card {
   display: flex;
   justify-content: center;
   width: 15%;
   height: 5.5em;
   max-width: 128px;
-  padding: 0.25em 0.5em;
   border: 2px solid snow;
-  border-radius: 0.5em;
   color: snow;
   background-color: rgba(27, 27, 27, 0.459);
 }
@@ -29,18 +27,8 @@
   font-size: 1.5rem;
 }
 
-.sr-only {
-  position: absolute;
-  z-index: -100;
-  /* option here */
-  width: 1px;
-  height: 1px;
-  overflow: hidden;
-  opacity: 0;
-}
-
 @media screen and (max-width: 576px) {
-  .date-container {
-    width: 25%;
+  .date.card {
+    width: 30%;
   }
 }

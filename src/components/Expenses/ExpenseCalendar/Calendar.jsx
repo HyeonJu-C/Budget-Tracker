@@ -6,7 +6,7 @@ const Calendar = (props) => {
   const year = props.date.getFullYear();
 
   return (
-    <section className='date-container'>
+    <section className='card date'>
       <h2 className='sr-only'>expense date</h2>
       <p className='date-detail'>
         <span className='month'>{month}</span>

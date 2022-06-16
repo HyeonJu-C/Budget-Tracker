@@ -3,7 +3,7 @@ import './Expenses.css';
 
 const Expenses = (props) => {
   return (
-    <main className='expenses-container'>
+    <main className='container expenses'>
       <ExpenseItem
         title={props.expenses[0].title}
         date={props.expenses[0].date}

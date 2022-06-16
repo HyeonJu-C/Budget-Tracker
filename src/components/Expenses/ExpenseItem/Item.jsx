@@ -3,7 +3,7 @@ import Calendar from '../ExpenseCalendar/Calendar';
 
 const ExpenseItem = (props) => {
   return (
-    <article className='item-container'>
+    <article className='card expense-item'>
       <Calendar date={props.date} />
       <section className='item-description'>
         <h1 className='description-title'>{props.title}</h1>
