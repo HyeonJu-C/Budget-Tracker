@@ -1,5 +1,5 @@
 import './Item.css';
-import Calendar from './Calendar/Calendar';
+import Calendar from '../ExpenseCalendar/Calendar';
 
 const ExpenseItem = (props) => {
   return (
