@@ -4,3 +4,7 @@
   justify-content: center;
   background-color: rgb(27, 27, 27);
 }
+
+.expenses-no {
+  color: white;
+}

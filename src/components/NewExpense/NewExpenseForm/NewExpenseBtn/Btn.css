@@ -1,0 +1,16 @@
+.form-actions {
+  text-align: end;
+}
+.form-action {
+  height: 3em;
+  border: none;
+  border-radius: 0.5em;
+  padding: 0.5em 1em;
+  background-color: rebeccapurple;
+  color: white;
+  font-size: 0.9rem;
+}
+
+.form-action.cancel {
+  margin-right: 0.5em;
+}

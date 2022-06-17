@@ -1,29 +1,26 @@
+import { useState } from 'react';
+import Filter from './ExpenseFilter/Filter';
 import ExpenseItem from './ExpenseItem/Item';
 import './Expenses.css';
 
 const Expenses = (props) => {
+  const [filterYear, setFilterYear] = useState('2022');
+  const filterd = props.expenses //
+    .filter((item) => item.date.getFullYear().toString() === filterYear);
+
   return (
     <main className='container expenses'>
-      <ExpenseItem
-        title={props.expenses[0].title}
-        date={props.expenses[0].date}
-        amount={props.expenses[0].amount}
-      />
-      <ExpenseItem
-        title={props.expenses[1].title}
-        date={props.expenses[1].date}
-        amount={props.expenses[1].amount}
-      />
-      <ExpenseItem
-        title={props.expenses[2].title}
-        date={props.expenses[2].date}
-        amount={props.expenses[2].amount}
-      />
-      <ExpenseItem
-        title={props.expenses[3].title}
-        date={props.expenses[3].date}
-        amount={props.expenses[3].amount}
-      />
+      <Filter setFilterYear={setFilterYear} selectedYear={filterYear} />
+      {filterd.length === 0 && <p className='expenses-no'>No item</p>}
+      {filterd.length !== 0 &&
+        filterd.map((item) => (
+          <ExpenseItem
+            key={item.id}
+            title={item.title}
+            amount={item.amount}
+            date={item.date}
+          />
+        ))}
     </main>
   );
 };
