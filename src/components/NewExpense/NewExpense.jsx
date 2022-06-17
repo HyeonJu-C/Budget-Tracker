@@ -22,7 +22,11 @@ const NewExpense = (props) => {
     <section className='container new-expense'>
       <h1 className='sr-only'>make new expense log</h1>
       {!toggle && (
-        <NewExpenseBtn onClick={toggleHandler} contents='Add New Expense' />
+        <NewExpenseBtn
+          type='button'
+          onClick={toggleHandler}
+          contents='Add New Expense'
+        />
       )}
       {toggle && (
         <NewExpenseForm

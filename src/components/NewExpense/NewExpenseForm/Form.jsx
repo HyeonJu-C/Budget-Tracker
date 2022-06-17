@@ -49,11 +49,13 @@ const NewExpenseForm = (props) => {
             onClick={props.toggleHandler}
             contents='Cancel'
             className='cancel'
+            type='button'
           />
           <NewExpenseBtn
             onClick={submitHandler}
             contents='Add Expense'
             className='add'
+            type='submit'
           />
         </div>
       </div>
