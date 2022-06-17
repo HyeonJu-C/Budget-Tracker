@@ -12,15 +12,17 @@ const Expenses = (props) => {
     <main className='container expenses'>
       <Filter setFilterYear={setFilterYear} selectedYear={filterYear} />
       {filterd.length === 0 && <p className='expenses-no'>No item</p>}
-      {filterd.length !== 0 &&
-        filterd.map((item) => (
-          <ExpenseItem
-            key={item.id}
-            title={item.title}
-            amount={item.amount}
-            date={item.date}
-          />
-        ))}
+      <ul>
+        {filterd.length !== 0 &&
+          filterd.map((item) => (
+            <ExpenseItem
+              key={item.id}
+              title={item.title}
+              amount={item.amount}
+              date={item.date}
+            />
+          ))}
+      </ul>
     </main>
   );
 };
