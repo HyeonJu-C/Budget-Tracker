@@ -1,0 +1,18 @@
+.filter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 0 1em;
+}
+
+.filter-label {
+  color: white;
+}
+
+.filter-input {
+  width: 30%;
+  max-width: 16em;
+  padding: 1em 2em;
+  text-align: center;
+  border-radius: 0.5em;
+}
