@@ -1,0 +1,7 @@
+.chart {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 2em 0;
+  background-color: thistle;
+  border-radius: 1em;
+}

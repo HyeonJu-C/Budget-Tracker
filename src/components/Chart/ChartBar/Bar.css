@@ -1,0 +1,28 @@
+.bar-outter {
+  position: relative;
+  width: 1em;
+  height: 10rem;
+  background-color: blueviolet;
+  border: 1px solid black;
+  border-radius: 0.5em;
+  margin: 0 auto;
+}
+
+.bar-fill {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-color: violet;
+  border-radius: 0.5em;
+  transition: all 200ms ease-in;
+}
+
+.bar-label {
+  font-size: 1.25rem;
+}
+
+@media screen and (max-width: 576px) {
+  .bar-outter {
+    width: 0.75em;
+  }
+}
